@@ -10,26 +10,26 @@ body {
 
 /* cursors*/
 body {
-  cursor: url('customcursor.png') , auto;
+  cursor: url('1_Home/rat-cursor.png') , auto;
   }
   
   
 a {
 
-	cursor: url('custompointer.png'), auto;
+	cursor: url('1_Home/rat-cursor.png'), auto;
 	}
 	
 	a:hover {
 	
-	cursor: url('custompointer.png'), auto;
+	cursor: url('1_Home/rat-cursor.png'), auto;
 	}
 	a:active {
 	
-	cursor: url('custompointer.png'), auto;
+	cursor: url('1_Home/rat-cursor.png'), auto;
 	}
 	
   a:visited {
-    color:blue;
+    color:purple;
 	}
 
 
