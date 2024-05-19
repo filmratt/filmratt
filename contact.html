@@ -46,7 +46,20 @@ width:100%; height:100%; object-fit: fill; "> </a>
 
 <a href="blog"> <button id="button" class="dropbtn">blog </button></a>
 
-<a href="webring"> <button id="button" class="dropbtn" >webring </button></a>
+
+
+<div class="dropdown">
+  <button id="drop2" class="dropbtn">webring </button>
+  <div id="myDropdown2" class="dropdown-content">
+    <hr class="solid">
+    <a href="friends">friends</a>
+    <hr class="solid">
+    <a href="resources">resources</a>
+    <hr class="solid">
+  </div>
+</div>
+
+
 
 
  </div> 
@@ -59,32 +72,48 @@ width:100%; height:100%; object-fit: fill; "> </a>
      
 
 <div id="profile">
-<img class="bg" src="avatar.png">
+<img class="bg" src="4_Contact/contact-image.jpeg">
 </div>
 
 <div class="row">
-        <div class="column1" style="background-color:#898f8a;">
+        <div class="column1" style="background-color:#cdd0cd;">
             <h2 style="text-align:center;">hi im ellie</h2>
-            <p class="IDtext">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah!</p>
+            <p class="IDtext"> A girl with bangs from the Midwest.</p>
         </div>
 
 
 <div class="column2" style="background-color:white;">
-            <h2>Where You Can Find Me</h2>
-          <a href="twitter.com/jjj4y0_o"> <p class="IDtext">My Twitter</p></a>
-          <a href="instagram.com/jjj4y0_o"> <p class="IDtext">My Instagram</p></a>
+            <h2>About me</h2>
+            <p class="IDtext">I like music. I write! Coding sidequest in progress...  
+              <br>
+              <p class="IDtext">See blinkies below 4 more</p> 
+          
         </div>
 
 <div class="column3" style="background-color:white;">
-            <h2>Contact Info</h2>
-            <br>
-            <p class="IDtext">deeznuts@gmail.com</p>
+            <h2>Contact me</h2>
+            <p class="IDtext">*work inquiries only plz*</p>
+
+            <a href="https://twitter.com/filmrattt"> <p class="IDtext">My Twitter</p></a>
+            <p class="IDtext">ellien1019@gmail.com</p>
+           
         </div>
+
+<div class="column4" style="background-color:#cdd0cd;">
+  <a href="http://blinki.es/women"><img src="http://blinki.es/blinkies/women/ebay-addict.gif" alt="Women blinkies" >
+    <img src="4_Contact/badmusicblinkie.gif" >
+    <img src="4_Contact/mikublinkie.gif"></a>
+  
+ 
+
+         
+      </div>
 </div>
 
+</div>
 
 </div>
-</div>
+
 
 
 </div>
@@ -96,6 +125,11 @@ width:100%; height:100%; object-fit: fill; "> </a>
     toggle between hiding and showing the dropdown content */
 document.getElementById("drop").addEventListener("click", function(e) {
   document.getElementById("myDropdown").classList.toggle("show");
+});
+
+
+document.getElementById("drop2").addEventListener("click", function(e) {
+  document.getElementById("myDropdown2").classList.toggle("show");
 });
 
 
@@ -263,7 +297,7 @@ window.addEventListener("click", function(event) {
    
  /*avatar*/
  .bg {
-	border: 2px solid black;
+	border: 5px solid whitesmoke;
 	
   /* Set up proportionate scaling */
   width:auto;
@@ -273,15 +307,15 @@ window.addEventListener("click", function(event) {
   position: relative;
   display:inline;
   top: 0;
-  left: 0;
+  left:0;
 }
 
 
  #profile {
   text-align:center;
   position:absolute;
-  top:2%;
-  left:1%;
+  top:5%;
+  left:32%;
   height:57%;  
   width: 33%;
   padding:2%;
@@ -298,10 +332,10 @@ window.addEventListener("click", function(event) {
     /* Set width length for the columns */
     .column1{
     position:absolute;
-    top:2%;
-    left:40%;
-    height:57%;  
-    width: 55%;
+    top:3%;
+    left:25%;
+    height:12%;  
+    width: 20%;
     padding:2%;
     }
       
@@ -309,10 +343,10 @@ window.addEventListener("click", function(event) {
     .column2 {
     text-align:center;  
     position:absolute;
-    top:67%;
-    left:40%;
-    height:25%;  
-    width: 55%;
+    top:18%;
+    left:62%;
+    height:18%;  
+    width: 25%;
     padding:2%;
     }  
       
@@ -320,14 +354,22 @@ window.addEventListener("click", function(event) {
      .column3 {
     text-align:center;
     position:absolute;
-    top:67%;
-    left:1%;
-    height:25%;  
-    width: 33%;
+    top:45%;
+    left:8%;
+    height:20%;  
+    width: 28%;
     padding:2%;
     }    
       
-      
+    .column4 {
+    text-align:center;
+    position:absolute;
+    top:60%;
+    left:64%;
+    height:29%;  
+    width: 24%;
+    padding:2%;
+    }    
       
   @media screen and (max-width: 700px) { /* Specific to this particular element on phones*/
 .footer{  
@@ -386,6 +428,7 @@ window.addEventListener("click", function(event) {
     width: 92%;
     padding:2%;
     word-wrap: break-word;
+    overflow:scroll;
     
   }
 } 
@@ -399,6 +442,7 @@ window.addEventListener("click", function(event) {
     width: 40%;
     padding:2%;
     word-wrap: break-word;
+    overflow:scroll;
   }
 } 
 
