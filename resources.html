@@ -1,120 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <!--Metadata-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESOURCES</title>
+    <title>filmratt ✦ RESOURCES</title> 
     <link rel="icon" href="1_Home/rat-favicon.png">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
 
-  </head>
-  
-  <body>
-  <div id="page-container">
-   <div id="content-wrap">
- <!--1400px x 200px banner-->
-  <div id="banner">
-<a href="webring"> <img src='webringbanner.png' style="
-width:100%; height:100%; object-fit: fill; "> </a>
-  </div>
- 
+<body> <!--Page Content begins-->
 
+<div id="banner-border"></div>
 
-     <div class="navbar">
-
-
-<a href="index"> <button id="button" class="dropbtn">home </button></a>
-
-
-
-<div class="dropdown">
-  <button id="drop" class="dropbtn">writing </button>
-  <div id="myDropdown" class="dropdown-content">
-    <hr class="solid">
-    <a href="features">features</a>
-    <hr class="solid">
-    <a href="interviews">interviews</a>
-    <hr class="solid">
-  </div>
+<!--Home Banner-->
+<div id="banner">
+<a href="index"> <img src="1_Home/animated-banner.gif" style="width:100%; height:100%; object-fit: fill;"></a> 
 </div>
 
+<div id="Box-parent">
+<!--Nav Bar-->
+<div class="navbar-container">
 
+<div class="button-group">
+    <a href="index"><button><b>home</b></button></a>
 
-<a href="contact"> <button id="button" class="dropbtn">contact</button></a>
+    <div class="dropdown">
+        <button id=drop onclick="myFunction()" class="drop-button"><b>writing</b></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="features">features</a>
+            <a href="interviews">interviews</a>
+        </div>
+    </div>
 
-
-
-<a href="blog"> <button id="button" class="dropbtn">blog </button></a>
-
-
-
-<div class="dropdown">
-  <button id="drop2" class="dropbtn">webring </button>
-  <div id="myDropdown2" class="dropdown-content">
-    <hr class="solid">
-    <a href="friends">friends</a>
-    <hr class="solid">
-    <a href="resources">resources</a>
-    <hr class="solid">
-  </div>
-</div>
-
-
- </div> 
-
-
-     <div id="content">
- 
-  
-  <div id="namecontainer">
-
-  
-  <!--add your friend's banners or website links-->
-  
-    <div class="webringbanner">
- <a href="www.friend.com"> <img src='friendwebringbanner.png' style="
-width:100%; height:100%; object-fit: fill; "> </a>
-  </div>
-   <div class="webringbanner">
- <a href="www.friend.com"> <img src='friendwebringbanner.png' style="
-width:100%; height:100%; object-fit: fill; "> </a>
-  </div>
-   <div class="webringbanner">
- <a href="www.friend.com"> <img src='friendwebringbanner.png' style="
-width:100%; height:100%; object-fit: fill; "> </a>
-  </div>
- <br> 
- <a href="www.friend.com"> www.friend.com </a>
- <br>
- <br>
- <br>
- <a href="www.friend.com"> www.friend.com </a>
- <br>
- <br>
- <br>
- <a href="www.friend.com"> www.friend.com </a>
-
-  
-  
-  
- 
- 
- </div>
- 
- 
- 
- 
- 
-</div>
- 
-</div>
-
-    <div class="footer"><p>footer</p></div>
-</div>
+    <a href="blog"><button><b>blog</b></button></a>
     
-    <script>
-  /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
+    <a href="contact"><button><b>contact</b></button></a>
+
+    <div class="dropdown">
+        <button id=drop2 onclick="myFunction()" class="drop-button"><b>webring</b></button>
+        <div id="myDropdown2" class="dropdown-content">
+            <a href="friends">friends</a>
+            <a href="resources">resources</a>
+        </div>
+    </div>
+
+</div>
+<p style="font-size: 12px;padding-top: 55px;text-align: center;">save my button to add me to your webring>></p>
+<div class="filmratt-btn">
+    <a href="index"><img src="6_Webring/filmratt-btn.png" alt="filmratt webring button" style="width:88px;height:31px;"></a>
+</div>
+<p style="font-size: 12px;text-align: center;">use this code in front of img src to link back to me: <br> <b>a href="https://filmratt.com"</b></p>
+</div>
+
+<!--Main Info Box-->
+<div class="mainbox">
+    <div id="maintext">
+      <h2>Resources</h2>
+      <p>an ongoing list of resources I recommend / have used in building this site.</p>
+      <div class="resources">
+        <li><a target="_blank" href="https://www.w3schools.com/html/html_basic.asp">W3Schools - Learn Basic HTML</a></li>
+        <li><a target="_blank" href="https://www.w3schools.com/css/default.asp">W3Schools - Learn Basic CSS</a></li>
+        <li><a target="_blank" href="https://neocities.org/">Neocities – Free Web Hosting.</a></li>
+        <li><a target="_blank" href="https://www.dropbox.com/scl/fi/r86gjqiljoe8r16hrap8d/site-template.zip?rlkey=ve06t5jmcq23pozrfw55i5w5r&e=1&dl=0">@JJJ4Y0_O [twitter] – Site template I studied to better understand HTML/CSS before coding this site from scratch. Very helpful!</a></li>
+        <li><a target="_blank" href="https://www.w3schools.com/css/default.asp">blinkies.cafe – Build Your Own Blinkies</a></li>
+        <li><a target="_blank" href="https://www.w3schools.com/css/default.asp">GifCities – Archive of GeoCities GIFs </a></li>
+        <li><a target="_blank" href="https://archive.org/">Internet Archive – Free Digital Library </a></li>
+        <li><a target="_blank" href="https://jspaint.app/">MS Paint Online – Great for Mac Users! </a></li>
+        <li><a target="_blank" href="https://www.pixilart.com/">Pixel Art – Free Pixel Art Drawing Tool </a></li>
+      </div>
+    
+    </div>
+</div>    
+</div>
+
+<footer>
+    <img src="1_Home/got_html-button.jpeg">
+    <img src="1_Home/internetPrivacy-button.gif">
+    <img src="1_Home/antinft-button.png">
+    <img src="1_Home/mspaint-button.gif">
+    <img src="1_Home/piracy-button.gif">
+    <img src="1_Home/ihatess-button.jpeg">
+    <img src="1_Home/css-button.gif">
+    <p>© filmratt 2024 - infinity </p>
+</footer>
+
+<script>
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
 document.getElementById("drop").addEventListener("click", function(e) {
   document.getElementById("myDropdown").classList.toggle("show");
 });
@@ -123,227 +95,164 @@ document.getElementById("drop2").addEventListener("click", function(e) {
   document.getElementById("myDropdown2").classList.toggle("show");
 });
 
+
 // Close the dropdown if the user clicks outside of it
-window.addEventListener("click", function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    document.querySelectorAll(".dropdown-content.show")
-      .forEach(openDropdown => openDropdown.classList.remove('show'))
+window.onclick = function(event) {
+  if (!event.target.matches('.drop-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
-});
+}
 </script>
 
+</body>
+
+<!--CSS Begins-->
 <style>
-.navbar{  
-  z-index:99;
-  position: relative;
-  top:10%;
-  right:0;
-  width:100%;
-  background-color: grey;
-  color: white;
-  text-align: center;
-  vertical-align:middle;
-  height: 9%;
-  padding-top:10px;
-  padding-bottom:10px;
-  
-} 
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 80px;    /* Footer height */
-}
-
-
-.footer{  
-  display:block;
-  z-index:50;
-  position: relative;
-  padding-top:1%;
-  left:0;
-  right:0;
-  width:100%;
-  background-color: grey;
-  color: black;
-  text-align: center;
-  height: 80px;
-}
-
-
-
-
-
-  #content { 
-  z-index:99;
-  height:100%;
- 
-}
-
-
-  #namecontainer {
-  padding-top:5%;
-  padding-left:5%;
-  padding-right:5%;
-  padding-bottom:5%;
-  position: relative;
-  width: 65%;
-  margin: 0 auto;
-  top: 5vh;
-  left: 0;
-  right: 0;
-  background-color: #98a39a;
-  border: 2px solid #e1e8e2;
-  text-align:center;
-      
-      
-  }
- 
- 
-   .webringbanner{
-  padding:5%;  
-    
-    
-    
-  }    
- 
- .dropbtn {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  font-size: 2.5vh;
-  border-radius: 2px;
-  cursor: url(custompointerfilename.png), auto;
-  transition-duration: 0.4s;
-  /*must change manually to match css stylesheet body font*/
-  font-family: "Menlo";
-}
-
-  .dropbtn:hover {
-  background-color: black; 
-  color: white;
-}
-
-  .cursor {
-  cursor: url(customcursorfilename.png), auto;
-  height: 350px;
-  width: 25%;
-  left: 200px;
-  position: absolute;
-  z-index: 99;
-
-}
-
-  .dropdown {
-  position: relative;
-  display: inline;
-  cursor: url(customcursorfilename.png), auto; 
-}
-
-  .dropdown-content {
-  display: none;
-  position: absolute;
-  left: 1%;
-  top: 10px;
-  background-color: #fff;
-  width: 90%;
-  z-index: 1;
-  margin-top: 20px;
-}
-
-  .dropdown-content a {
-  color: black;
-  padding: 5px 5px;
-  text-decoration: none;
-  display: block;
-}
-
-/* edit dropdown */
-  hr.solid {
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  border-top: 1px solid #fff;
-  border-bottom:  1px solid #fff;
-}
-
-  .show {
-  display: block;
-}
- 
- 
-
-  .menu {
-  padding:5px;
-  padding-top:10px;  
-} 
-
-
- 
-  body {
+/*This is to style the background image*/
+body {
   background:black;
-  background-size:100%;
-  background-image: url('backgroundimagefilename.png');
+  background-size:12%;
+  background-image: url(1_Home/bg-home.png);
   background-repeat: repeat;
 }
 
-@media screen and (max-width: 700px) { /* Specific to this particular element on phones*/
-.footer{  
- font-size: 1.5vh;
- }
+/*This is to style the scrolling bar*/
+#scrolling{
+    height:19px;
+    position: relative;
+    top: -8px;
+    border: 3px solid black;
 }
 
-@media screen and (max-width: 700px) { /* Specific to this particular element on phones*/
-.dropbtn {
-  font-size: 1.5vh;
- }
+/*This is to style the banner image*/
+#banner img{
+    border: 3px solid black;
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 700px) { /* Specific to this particular element on phones*/
- .dropdown-content a {
-  color: black;
-  padding: 5px 5px;
-  text-decoration: none;
-  display: block;
-  font-size: 1.5vh;
- }
+/*This is to style the Box parent div*/
+#Box-parent{
+    display:flex;
+    width: 1080px;
+}
+
+/* This is to style the navbar box */
+.navbar-container{
+    background-color: #FFBCDA;
+    width:300px;
+    height:500px;
+    border:3px solid black;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    top: 8px;
+    border-radius: 25px;
+    right: -60px;
+
+}
+
+/*This is to style navbar button*/
+.button-group button{
+    display: block;
+    background-color: black;
+    color: beige;
+    border-radius: 30px;
+    width: 220px;
+    padding: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-family: menlo;
+    border: none;
+}
+
+/*This is to style hovering over navbar buttons*/
+.button-group button:hover{
+    background-color: #E13283;
+    text-decoration: underline;
+    text-decoration-color: #E13283;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #E13283;
+    min-width: 220px;
+    
+}
+
+.dropdown-content a {
+    color: beige;
+    font-size: 14px;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover{
+    background-color: #dd5e99;
+}
+
+.show {display:block}
+
+
+
+
+.filmratt-btn{
+    text-align: center;
+}
+
+/*This is to style the main box */
+.mainbox{
+    background-color: #946656;
+    width:1000px;
+    height:500px;
+    border:3px solid black;
+    padding: 20px;
+    margin: 5px;
+    position: relative;
+    top: 8px;
+    border-radius: 25px;
+    left: 200px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+/*This is to style the text within mainbox*/
+#maintext{
+    text-align: center;
+    color: beige;
+}
+
+.resources{
+    text-align: left;
 }
 
 
- @media screen and (max-width: 700px) { /* Specific to this particular element on phones.*/
-#namecontainer { 
-  padding-top:5%;
-  padding-left:5%;
-  padding-right:5%;
-  padding-bottom:10%;
-  position: relative;
-  width: 75%;
-  margin: 0 auto;
-  top: 3vh;
-  left: 0;
-  right: 0;
-  background-color: #98a39a;
-  border: 2px solid black;
-  }
-} 
+footer{
+    text-align: center;
+    padding: 11px;
+    margin-top: 100px;
+    background-color: beige;
+    color: black;
+    font-size: 10px;
+}
 
 
-
-@media screen and (max-width: 700px) { /* Specific to this particular element on phones.*/
-  .webringbanner{
-  padding:5%;  
-    
-    
-    
-  }     
-}      
-      
 </style>
 
 
 
-</body>
+
+
 </html>
