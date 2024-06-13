@@ -52,9 +52,9 @@
     </div>
 
 </div>
+
 <div class="speaker">
     <a href="wip"><img src="1_Home/speaker.png" alt="speaker" style="width:220px;height:300px;"></a>
-    
 </div>
 
 </div>
@@ -62,7 +62,7 @@
 <!--Main Info Box-->
 <div class="mainbox">
     <h1 class=maintext style="font-family: Arial, Helvetica, sans-serif;">♫♪.ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı.♫♪</h1>
-    <p>a short manifesto of sorts... Tired of the world revolving around the same 3 apps? Me too – so I created this website as my safe space far away from ads, algorithms, and my data being stolen/sold unknowingly.</p>
+    <p>a short manifesto of sorts... Tired of the world revolving around the same 3 apps? Me too – so I created this website as my space away from ads, algorithms, and my data being stolen/sold unknowingly.</p>
     <p>Ever since I was a little girl, I knew I wanted to be on the computer a lot....lol jk. But I have always wanted my own site customized by me, for me! And after much procrastination (☉_☉)... I finally got serious about learning to code again.</p>
     <p>HTML and CSS is pretty easy and accessible for anyone with a computer to learn. There's so many free instructional sites and YouTube videos online. I've even compiled a <a href="resources">resources</a> page here of references I've used myself. Though at times coding can be frustrating, it's so rewarding when things do eventually <i>click</i>. Don't give up! </p>
     <p>Social media is so limiting with zero access to customize your page aside from profile pics and bios. With your own website, you can express yourself to the fullest extent <b>for little to no $$$!!!</b></p>
@@ -139,7 +139,8 @@ body {
 /*This is to style the Box parent div*/
 #Box-parent{
     display:flex;
-    width: 1080px;
+    flex-direction: row;
+    max-width: 1080px;
 }
 
 /* This is to style the navbar box */
@@ -222,6 +223,8 @@ body {
     top: 8px;
     border-radius: 25px;
     left: 200px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
 }
 
 /*This is to style the text within mainbox*/
@@ -240,10 +243,75 @@ footer{
 }
 
 
+/*mobile-friendly*/
+
+@media screen and (max-width:800px){
+    body{
+        background:black;
+        background-size:25%;
+        background-image: url(1_Home/bg-home.png);
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #Box-parent{
+        flex-direction: row;
+    }  
+}
+
+@media screen and (max-width: 800px){
+    .navbar-container{
+        position: relative;
+        height: 430px;
+        width: 150px;
+        margin-right: 17px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .button-group button{
+        width: 150px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .speaker img {
+     object-position: -25px;
+     object-fit: contain;
+     padding-top: 5px !important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .mainbox{
+        position: relative;
+        height: 430px;
+        left: 12px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .mainbox p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .maintext {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:800px){
+    footer {
+     margin-top: 60px;
+    }
+}
+
+
 </style>
-
-
-
-
-
 </html>
