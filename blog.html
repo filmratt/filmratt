@@ -58,7 +58,7 @@
     <div id="maintext">
         <img src="5_Blog/caution-divider.gif">
         <h2>UNDER CONSTRUCTION</h2>
-        <h4>have a nice day! <img src="5_Blog/gloomy-gif.gif"></h4>
+        <h4>have a nice day! <img id="gloomy" src="5_Blog/gloomy-gif.gif"></h4>
         <img src="5_Blog/caution-divider.gif">
     </div>
 </div>    
@@ -236,6 +236,94 @@ footer{
     font-size: 10px;
 }
 
+
+/*mobile-friendly*/
+
+@media screen and (max-width:600px){
+    body{
+        background:black;
+        background-size:25%;
+        background-image: url(1_Home/bg-home.png);
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #Box-parent{
+        flex-direction: row;
+    }  
+}
+
+@media screen and (max-width: 600px){
+    .navbar-container{
+        position: relative;
+        height: 300px;
+        width: 80px;
+        margin-right: 17px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .button-group button{
+        width: 80px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .mainbox{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        left: 12px;
+        
+    }
+}
+
+@media screen and (max-width:600px){
+    .mainbox img{
+        width: 200px;
+        
+    }
+}
+
+@media screen and (max-width:600px){
+    #gloomy{
+        width: 15px;
+        
+    }
+}
+
+@media screen and (max-width:600px){
+    h2{
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and (max-width:600px){
+    h4{
+        font-size: 8px;
+        
+    }
+}
+
+@media screen and (max-width:600px){
+    .speaker img{
+        object-fit: contain;
+
+     
+    }
+}
+
+@media screen and (max-width:600px){
+    footer {
+     margin-top: 60px;
+    }
+}
 
 </style>
 
