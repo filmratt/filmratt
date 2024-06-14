@@ -47,11 +47,11 @@
 
 </div>
 
-<p style="font-size: 12px;padding-top: 55px;text-align: center;">save my button to add me to your webring>></p>
+<p id="web-btn">save my button to add me to your webring>></p>
 <div class="filmratt-btn">
     <a href="index"><img src="6_Webring/filmratt-btn.png" alt="filmratt webring button" style="width:88px;height:31px;"></a>
 </div>
-<p style="font-size: 12px;text-align: center;">use this code in front of img src to link back to me: <br> <b>a href="https://filmratt.com"</b></p>
+<p id="code-link">use this code in front of img src to link back to me: <br> <b>a href="https://filmratt.com"</b></p>
 </div>
 
 <!--Main Info Box-->
@@ -239,6 +239,17 @@ body {
   box-shadow:3px 3px 3px beige
 }
 
+#web-btn {
+    font-size: 12px;
+    padding-top: 55px;
+    text-align: center;
+}
+
+#code-link{
+    font-size: 12px;
+    text-align: center;
+}
+
 footer{
     text-align: center;
     padding: 11px;
@@ -291,7 +302,6 @@ footer{
         height: 300px;
         width: 300px;
         left: 12px;
-        margin-right: 10px;
     }
 }
 
@@ -310,6 +320,19 @@ footer{
         padding: 2px;
         object-fit: cover;
      
+    }
+}
+
+@media screen and (max-width:600px){
+    #web-btn {
+        font-size: 8px;
+        padding-top: 2px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #code-link {
+        font-size: 8px;
     }
 }
 
