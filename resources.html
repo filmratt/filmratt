@@ -156,6 +156,8 @@ body {
     top: 8px;
     border-radius: 25px;
     right: -60px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
 
 }
 
@@ -250,6 +252,75 @@ footer{
 }
 
 
+/*mobile-friendly*/
+
+@media screen and (max-width:600px){
+    body{
+        background:black;
+        background-size:25%;
+        background-image: url(1_Home/bg-home.png);
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #Box-parent{
+        flex-direction: row;
+    }  
+}
+
+@media screen and (max-width: 600px){
+    .navbar-container{
+        position: relative;
+        height: 300px;
+        width: 80px;
+        margin-right: 17px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .button-group button{
+        width: 80px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .mainbox{
+        position: relative;
+        height: 300px;
+        width: 300px;
+        left: 12px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .mainbox p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .mainbox h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .mainbox li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:600px){
+    footer {
+     margin-top: 60px;
+    }
+}
 </style>
 
 
