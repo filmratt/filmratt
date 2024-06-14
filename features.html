@@ -47,9 +47,9 @@
 
 </div>
 <div class="pinkyst">
-  <img src="2_Features/pinkyst.png" alt="Pinky St. Doll" style="width:150px;height:250px;">
+  <img src="2_Features/pinkyst.png" alt="Pinky St. Doll">
 </div>
-<p style="font-size: 12px;color: beige;padding-top: 20px;">slowly updating this page...<br><br>be kind.</p>
+<p id="navbar-note">slowly updating this page...<br><br>be kind.</p>
 
 </div>
 
@@ -212,13 +212,18 @@ body {
 .show {display:block}
 
 
-
-
-.pinkyst{
+.pinkyst img{
+  width:150px;
+  height:250px;
   padding-top: 20px;
   float: left;
 }
 
+#navbar-note{
+ font-size: 12px;
+ color: beige;
+ padding-top: 20px
+}
 
 /*This is to style the main box */
 .mainbox{
@@ -271,11 +276,89 @@ footer{
     font-size: 10px;
 }
 
+/*mobile-friendly*/
+
+@media screen and (max-width:600px){
+    body{
+        background:black;
+        background-size:25%;
+        background-image: url(1_Home/bg-home.png);
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #Box-parent{
+        flex-direction: row;
+        max-width: 375px;
+    }  
+}
+
+@media screen and (max-width: 600px){
+    .navbar-container{
+        position: relative;
+        height: 300px;
+        width: 140px;
+        margin-right: 17px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .button-group button{
+        width: 80px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    .mainbox{
+        position: relative;
+        height: 300px;
+        width: 300px;
+        left: 12px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .gallery{
+        width: 120px;
+        height: 180px;
+        flex-direction: column;
+        margin-left: 23px;
+        border: none;
+    
+    }
+}
+
+@media screen and (max-width:600px){
+    .desc{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .pinkyst img{
+        width: 60px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #navbar-note{
+        font-size: 4px;
+    }
+}
+
+@media screen and (max-width:600px){
+    footer {
+     margin-top: 60px;
+    }
+}
 
 </style>
-
-
-
-
 
 </html>

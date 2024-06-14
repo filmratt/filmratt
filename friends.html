@@ -59,10 +59,8 @@
     <div id="maintext">
         <h2>Webring</h2>
     </div>
-    <div class="webring-btn">
-    <a target="_blank" href="https://www.youtube.com/@firstgenfamous/videos"><img src="6_Webring/fgf-banner.png" alt="First Gen Famous Youtube Channel" style="width:600px;height:80px;"></a>
-    <a target="_blank" href="index"><img src="6_Webring/webring-consideration-btn.png" alt="Want to join my webring? Email me your site & button for consideration! Email can be found on contact page." style="width:600px;height:80px;"></a>
-    </div>
+     <a target="_blank" href="https://www.youtube.com/@firstgenfamous/videos"><img src="6_Webring/fgf-banner.png" alt="First Gen Famous Youtube Channel"></a>
+     <a target="_blank" href="index"><img src="6_Webring/webring-consideration-btn.png" alt="Want to join my webring? Email me your site & button for consideration! Email can be found on contact page."></a>
 </div>    
 </div>
 
@@ -229,12 +227,14 @@ body {
     color: beige;
 }
 
-.webring-btn{
-    padding-left: 60px;
+.mainbox img{
+    width:600px;
+    height:80px;
+    margin-left: 60px;
     cursor: pointer;
 }
 
-.webring-btn img:hover{
+.mainbox img:hover{
   border: 1px solid beige;
   box-shadow:3px 3px 3px beige
 }
@@ -314,13 +314,13 @@ footer{
 
 
 @media screen and (max-width:600px){
-    .webring-btn img{
+    .mainbox img{
         display: block;
         position: relative;
-        width: 500px !important;
-        padding: 2px;
-        object-fit: cover;
-     
+        width: 170px;
+        height: 30px;
+        padding: 2px !important;
+        margin-left: -2px;
     }
 }
 
